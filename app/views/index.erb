@@ -1,0 +1,9 @@
+<h1>Recipe App Index Page</h1>
+
+  <% @recipes.each do |recipe| %>
+<p><h3>/recipes/<%=recipe.id %></h3><p>
+  <p>1. Name: <%=recipe.name %><p>
+  <p>2. Ingredients: <%= recipe.ingredients %><p>
+  <p>3. Cook Time: <%= recipe.cook_time %><p>
+    <br>
+  <%end%>
